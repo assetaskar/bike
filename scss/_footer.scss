@@ -1,0 +1,54 @@
+/* ------------------------------------ */
+/* ______________FOOTER________________ */
+
+.footer {
+	height: 250px;
+	background-color: #f7f7f7;
+	&__row {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 70%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__address {
+		flex: 1 1 33.33%;
+		font-size: 16px;
+		line-height: 17px;
+		font-weight: 700;
+		color: #848789;
+		span {
+			font-size: 14px;
+			font-weight: 400;
+			font-style: italic;
+		}
+	}
+
+	&__socials {
+		flex: 1 1 33.33%;
+		text-align: center;
+		svg {
+			width: 35px;
+			height: 35px;
+			margin: 7.5px;
+		}
+	}
+
+	&__author {
+		flex: 1 1 33.33%;
+		text-align: right;
+		font-size: 14px;
+		line-height: 36px;
+		font-style: italic;
+		color: #848789;
+		img {
+			width: 55px;
+			height: 36px;
+			margin-left: 8px;
+		}
+	}
+}

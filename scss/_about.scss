@@ -1,0 +1,20 @@
+/* ------------------------------------ */
+/* _______________ABOUT________________ */
+
+.about-us {
+	background-color: #f7f7f7;
+	text-align: center;
+	padding-top: 117px;
+	padding-bottom: 142px;
+	h3 {
+		margin: 35px 0;
+	}
+	&__text {
+		width: 70%;
+		margin: 0 auto;
+		font-size: 18px;
+		line-height: 34px;
+		font-weight: 400;
+		color: #848789;
+	}
+}

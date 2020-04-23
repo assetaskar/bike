@@ -1,0 +1,97 @@
+/* ------------------------------------ */
+/* _______________SHOP_________________ */
+
+.shop {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__row {
+		display: flex;
+		width: 100%;
+	}
+
+	&__item {
+
+		&_1 {
+			width: 33.333%;
+			min-width: 240px;
+			flex-grow: 1;
+		}
+
+		&_2 {
+			width: 33.333%;
+			min-width: 240px;
+			display: flex;
+			flex-grow: 1;
+		}
+
+		&_3 {
+			width: 33.333%;
+			min-width: 240px;
+			flex-grow: 1;
+		}
+	}
+
+	&_min-img {
+		display: block;
+		width: 50%;
+		height: 50%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&_horizontal-img {
+		width: 100%;
+		height: 50%;
+		position: relative;
+	}
+
+	&_vertical-img {
+		position: relative;
+		width: 50%;
+		height: 100%;
+	}
+
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+
+		&:hover~.shop__link {
+			z-index: 2;
+		}
+	}
+
+	&__link {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(100, 194, 158, 0.8);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		z-index: -1;
+
+		&:hover {
+			z-index: 2;
+		}
+
+		span {
+			display: block;
+			margin-top: 15px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+		}
+	}
+
+	&__icon {
+		width: 51px;
+		height: 30px;
+	}
+}

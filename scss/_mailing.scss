@@ -1,0 +1,63 @@
+/* ------------------------------------ */
+/* ______________MAILING_______________ */
+
+.mailing {
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 111px;
+	&__icon {
+		height: 85px;
+	}
+
+	&__text {
+		font-size: 24px;
+		font-weight: 400;
+		font-style: italic;
+		color: #848789;
+
+		padding: {
+			top: 40px;
+			bottom: 35px;
+		}
+	}
+
+	&__form {
+		height: 77px;
+	}
+
+	&__mail {
+		max-width: 400px;
+		height: 70px;
+		padding-left: 28px;
+		border: 1px solid #d3d7d9;
+		font-size: 20px;
+		color: #000;
+		&::placeholder {
+			font-style: italic;
+			color: #929292;
+		}
+		&:focus {
+			border: 1px solid #7c7c7c;
+		}
+	}
+
+	&__button {
+		width: 126px;
+		height: 70px;
+		margin-top: 15px;
+		margin-left: 5px;
+		font-size: 24px;
+		color:#fff;
+		background-color: #64c29e;
+		cursor: pointer;
+		&:hover {
+			box-shadow: 0 0 10px #5da589;
+			transform: translateY(-5%);
+		}
+		&:active {
+			transform: none;
+			box-shadow: none;
+			text-shadow: 0 0 10px #fff;
+		}
+	}
+}

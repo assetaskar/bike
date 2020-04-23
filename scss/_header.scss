@@ -1,0 +1,81 @@
+/* ------------------------------------ */
+/* _______________HEADER_______________ */
+
+@mixin nav-position {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__menu {
+		width: 94px;
+		height: 85px;
+		position: absolute;
+		left: 50%;
+		top: 35px;
+		transform: translateX(-50%);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&_left-nav {
+			@include nav-position;
+			justify-content: flex-end;
+			right: calc(100% + 35px);
+		}
+
+		&_right-nav {
+			@include nav-position;
+			left: calc(100% + 35px);
+		}
+
+		&__link {
+			flex-shrink: 0;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 35px;
+			font-weight: 700;
+			letter-spacing: 0.2em;
+			color: #4d4959;
+
+			&:hover {
+				color: #64c29e;
+			}
+		}
+
+		&__dot {
+			flex-shrink: 0;
+			width: 75px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 35px;
+			font-weight: 700;
+			color: #4d4959;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+
+	.header__menu_left-nav {
+		flex-wrap: wrap;
+		right: calc(100% + 10px);
+	}
+
+	.header__menu_right-nav {
+		flex-wrap: wrap;
+		left: calc(100% + 10px);
+	}
+
+	.header__menu__dot {
+		display: none;
+	}
+}
