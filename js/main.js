@@ -6,3 +6,7 @@ $(document).ready(function(){
 		autoplayHoverPause: true
 	});
 });
+
+const elementSpan = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+elementSpan.innerHTML = currentYear;
